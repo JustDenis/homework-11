@@ -4,3 +4,14 @@
 
 @import 'normalize.scss';
 @import 'base.scss';
+
+/*Utils*/
+
+@import 'utils/variables.scss';
+@import 'utils/mixins.scss';
+
+/*Layout*/ 
+
+@import 'layout/header.scss';
+@import 'layout/main.scss';
+@import 'layout/footer.scss'
