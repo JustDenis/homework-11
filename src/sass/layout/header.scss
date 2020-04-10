@@ -1,0 +1,71 @@
+.header{
+    padding: 3rem 0 23rem 0;
+    background: url('../images/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu{
+    @include flex(no-wrap);
+    margin-bottom: 16.5rem;
+}
+
+.logo{
+    color: $primary-light;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 200ms linear;
+
+    &:hover{
+        color: $secondary-orange;
+        transition: 200ms linear;
+    }
+}
+
+.nav-items{
+    display: flex;
+}
+
+.nav-item, 
+.nav-icon{
+    margin-right: 5.5rem;
+    list-style-type: none;
+}
+
+.nav-item:last-child,
+.nav-icon:last-child{
+    margin-right: 0;
+}
+
+.nav-link{
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    color: $primary-light;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 0.3rem solid transparent;
+    transition: 200ms linear;
+
+    &:hover{
+        color: $secondary-orange;
+        border-bottom: 0.3rem solid $secondary-orange;
+        transition: 200ms linear;
+    }
+}
+
+.nav-icon-cart,
+.nav-icon-glass{
+    height: 2rem;
+    width: 2rem;
+    fill: $primary-light;
+    transition: 200ms linear
+ }
+
+.nav-icon-cart:hover,
+.nav-icon-glass:hover{
+    fill: $secondary-orange;
+    transition: 200ms linear;
+}
