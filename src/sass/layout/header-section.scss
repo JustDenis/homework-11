@@ -6,6 +6,15 @@
     background-position: center;
 }
 
+@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .header{
+        background: url('../images/main-bg@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 .menu{
     @include flex(no-wrap);
     margin-bottom: 16.5rem;
@@ -68,4 +77,42 @@
 .nav-icon-glass:hover{
     fill: $secondary-orange;
     transition: 200ms linear;
+}
+
+.header-section{
+    text-align: center;
+}
+
+.header-title{
+    color: $primary-light;
+    font-size: 15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12rem;
+
+    span{
+        font-family: 'Kaushan Script', cursive;
+        display: block;
+        font-size: 7.2rem;
+        font-weight: 400;
+        text-transform: none;
+        margin-bottom: 6.5rem;
+    }
+}
+
+.header-link{
+    padding: 1.2rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $primary-light;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 0.3rem solid #fff;
+    transition: 200ms linear;
+
+    &:hover{
+        color: $secondary-orange;
+        border: 0.3rem solid $secondary-orange;
+        transition: 200ms linear;
+    }
 }
